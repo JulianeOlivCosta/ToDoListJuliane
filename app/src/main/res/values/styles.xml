@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToDoListItemBackground">
+        <item name="android:background">@drawable/item_todo_list_background</item>
+    </style>
+
+
+</resources>
