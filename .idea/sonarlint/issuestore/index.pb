@@ -15,3 +15,7 @@ p
 @app/src/main/java/com/example/todolist/data/ToDoItemsDataBase.kt,4/8/4884f1f861e2aebc4d3fd760b5fb73c40a128d40
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+x
+Happ/src/main/java/com/example/todolist/domain/useCase/ToDoListUseCase.kt,3/4/34fe990edbbc4fd374cc0faab4d04ac4fa8072c3
+x
+Happ/src/main/java/com/example/todolist/view/ToDoList/ToDoListActivity.kt,c/4/c4a9a47584c59257b67678ab54954a24a3477b8c

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clickable="true"
@@ -8,13 +10,44 @@
     android:orientation="vertical"
     android:theme="@style/ToDoListItemBackground">
 
-    <CheckBox
+    <Button
         android:id="@+id/check_box_todo_item_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_8"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/text_view_todo_item_title"
+        style="@style/RobotoCondensedBold.16spWhite"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_18"
+        android:layout_marginEnd="@dimen/size_16"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="@id/check_box_todo_item_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/check_box_todo_item_status"
+        app:layout_constraintTop_toTopOf="@id/check_box_todo_item_status"
+        tools:text="To Do item title" />
+
+    <TextView
+        android:id="@+id/text_view_todo_item_description"
+        style="@style/RobotoCondensedRegular.12spWhite"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_marginBottom="@dimen/size_8"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/text_view_todo_item_title"
+        app:layout_constraintStart_toStartOf="@id/text_view_todo_item_title"
+        app:layout_constraintTop_toBottomOf="@id/text_view_todo_item_title"
+        tools:text="Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

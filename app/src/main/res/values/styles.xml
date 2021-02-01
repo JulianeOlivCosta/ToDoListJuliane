@@ -5,5 +5,23 @@
         <item name="android:background">@drawable/item_todo_list_background</item>
     </style>
 
+    <style name="RobotoCondensedRegular">
+        <item name="android:fontFamily">@font/roboto_condensed_regular</item>
+    </style>
+
+    <style name="RobotoCondensedRegular.12spWhite" parent="RobotoCondensedRegular">
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="RobotoCondensedBold">
+        <item name="android:fontFamily">@font/roboto_condensed_bold</item>
+    </style>
+
+    <style name="RobotoCondensedBold.16spWhite" parent="RobotoCondensedBold">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>
