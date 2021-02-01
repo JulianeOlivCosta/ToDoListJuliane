@@ -2,7 +2,7 @@
 <resources>
 
     <style name="ToDoListItemBackground">
-        <item name="android:background">@drawable/item_todo_list_background</item>
+        <item name="android:background">@drawable/item_todo_item_background</item>
     </style>
 
     <style name="RobotoCondensedRegular">

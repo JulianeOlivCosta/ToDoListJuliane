@@ -8,10 +8,13 @@
     android:elevation="@dimen/size_4"
     android:focusable="true"
     android:orientation="vertical"
+    android:layout_marginStart="@dimen/size_8"
+    android:layout_marginEnd="@dimen/size_8"
+    android:layout_marginBottom="@dimen/size_10"
     android:theme="@style/ToDoListItemBackground">
 
     <Button
-        android:id="@+id/check_box_todo_item_status"
+        android:id="@+id/button_todo_item_status"
         android:layout_width="20dp"
         android:layout_height="30dp"
         android:layout_marginStart="@dimen/size_16"
@@ -20,7 +23,23 @@
         android:clickable="true"
         app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image_view_delivery_card_status_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginEnd="@dimen/size_14"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_todo_item_title"
+        app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_checked"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/text_view_todo_item_title"
@@ -30,10 +49,10 @@
         android:layout_marginStart="@dimen/size_18"
         android:layout_marginEnd="@dimen/size_16"
         android:maxLines="2"
-        app:layout_constraintBottom_toBottomOf="@id/check_box_todo_item_status"
+        app:layout_constraintBottom_toBottomOf="@id/button_todo_item_status"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/check_box_todo_item_status"
-        app:layout_constraintTop_toTopOf="@id/check_box_todo_item_status"
+        app:layout_constraintStart_toEndOf="@id/button_todo_item_status"
+        app:layout_constraintTop_toTopOf="@id/button_todo_item_status"
         tools:text="To Do item title" />
 
     <TextView
