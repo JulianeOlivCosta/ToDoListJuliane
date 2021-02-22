@@ -15,6 +15,12 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+    <style name="RobotoCondensedRegular.14spWhite" parent="RobotoCondensedRegular">
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
     <style name="RobotoCondensedBold">
         <item name="android:fontFamily">@font/roboto_condensed_bold</item>
     </style>
