@@ -7,6 +7,6 @@ import com.example.todolist.R
 class ToDoListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.to_do_list_activity)
     }
 }
