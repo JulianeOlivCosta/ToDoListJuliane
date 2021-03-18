@@ -21,8 +21,6 @@ x
 Happ/src/main/java/com/example/todolist/view/ToDoList/ToDoListActivity.kt,c/4/c4a9a47584c59257b67678ab54954a24a3477b8c
 l
 <app/src/main/java/com/example/todolist/view/ToDoList/ToDo.kt,c/9/c922d0dfe5324380eb6832c24e462d43eae4d5c4
-X
-(app/src/main/res/drawable/ic_checked.xml,5/b/5bbc8da1d73394ae0bc08d7e56952ab5b73a59ea
 g
 7app/src/main/res/drawable/item_todo_item_background.xml,c/c/ccc8ec56951241dc67ac8e3d0544a8652d43ec7c
 R

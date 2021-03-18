@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
-    tools:context=".view.ToDoList.ToDoListActivity">
+    tools:context=".view.toDoList.ToDoListActivity">
 
     <TextView
         android:id="@+id/text_view_task_title"
@@ -29,6 +29,19 @@
         app:layout_constraintStart_toStartOf="@+id/text_view_task_title"
         app:layout_constraintTop_toBottomOf="@+id/text_view_task_title"
         tools:text="Task Description Task DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTas DescriptionTask DescriptionTaskDescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTaskDescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask DescriptionTask" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button_to_do_item"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_18"
+        android:layout_marginBottom="@dimen/size_16"
+        android:backgroundTint="@color/grey"
+        android:clickable="true"
+        app:backgroundTint="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

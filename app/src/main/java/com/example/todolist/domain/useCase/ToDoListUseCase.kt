@@ -1,4 +1,10 @@
 package com.example.todolist.domain.useCase
 
-class ToDoListUseCase {
+import com.example.todolist.domain.entities.ToDoItemsEntity
+
+interface ToDoListUseCase {
+    suspend fun getToDoItemsList(toDoItemsList: List<ToDoItemsEntity>)
+    suspend fun insertNewToDoItem(toDoItem: ToDoItemsEntity)
+
+
 }
