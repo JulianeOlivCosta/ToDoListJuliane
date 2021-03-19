@@ -4,9 +4,13 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "toDo_items")
-data class ToDoItemsEntity(
-    @PrimaryKey val id: Int,
+//DAO interface
+@Entity(tableName = "toDo_data_table")
+data class ToDoEntity(
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "toDo_id")
+    val id: Int,
 
     @ColumnInfo(name = "toDo_title")
     val title: String,
