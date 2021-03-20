@@ -11,7 +11,7 @@ interface ToDoDAO {
     suspend fun insertToDoItem(ToDoItem: ToDoEntity): Long
 
     @Update
-    suspend fun updateToDoItems(ToDoItem: ToDoEntity)
+    suspend fun updateToDoItems(ToDoItem: List<ToDoEntity?>)
 
     @Delete
     suspend fun deleteToDoItem(ToDoItem: ToDoEntity)
