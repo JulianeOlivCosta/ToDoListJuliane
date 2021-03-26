@@ -13,8 +13,6 @@ R
 "app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 R
 "app/src/main/res/values/themes.xml,e/b/eb7f0f821bde169dd21862705b2b042d2cea69a3
-~
-Napp/src/main/java/com/example/todolist/view/addListItem/AddListItemActivity.kt,f/8/f8719fab369aa00701b2fd87e27c9e20c8bbde8b
 t
 Dapp/src/main/java/com/example/todolist/view/toDoList/DoneFragment.kt,0/c/0c08cd818e35dcbe195bdc4c8dea7f99b26d9792
 l
@@ -41,3 +39,5 @@ t
 Dapp/src/main/java/com/example/todolist/domain/useCase/ToDoUseCase.kt,c/f/cf88daf64079a3f34f8a330c1f6f23f51f56d09e
 x
 Happ/src/main/java/com/example/todolist/domain/useCase/ToDoUseCaseImpl.kt,1/9/194f30fd9bbebffc1ea40305d08ed8e434eb4837
+~
+Napp/src/main/java/com/example/todolist/view/toDoAddItem/ToDoAddItemActivity.kt,f/b/fbfba52ad8612418df0f5c458551b0d8d944fb0c
