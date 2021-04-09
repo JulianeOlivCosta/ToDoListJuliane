@@ -24,6 +24,7 @@
         app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true"
         tools:visibility="invisible" />
 
     <ImageView
@@ -43,7 +44,7 @@
 
     <TextView
         android:id="@+id/text_view_todo_item_title"
-        style="@style/RobotoCondensedBold.16spWhite"
+        style="@style/RobotoCondensedBold.18spWhite"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_18"

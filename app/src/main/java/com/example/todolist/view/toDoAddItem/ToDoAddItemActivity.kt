@@ -8,7 +8,7 @@ import org.koin.android.ext.android.inject
 
 class ToDoAddItemActivity : AppCompatActivity() {
 
-    val binding by lazy {
+    private val binding by lazy {
         TodoAddItemActivityBinding.inflate(layoutInflater)
     }
     private val viewModel by inject<ToDoViewModel>()
@@ -21,14 +21,16 @@ class ToDoAddItemActivity : AppCompatActivity() {
 
     private fun saveButton() {
         binding.addButtonToDoItem.setOnClickListener {
-            val title = binding.textViewTaskTitle.text.toString()
-            val description = binding.textViewTaskDescription.toString()
+            val title = binding.editTextTaskTitle.text.toString()
+            val description = binding.editTextTaskDescription.text.toString()
             val toDo = false
             viewModel.insertNewToDoItem(
                 toDoTitle = title,
                 toDoDescription = description,
                 isConcluded = toDo
             )
+            title.isBlank()
+            description.isBlank()
         }
     }
 }

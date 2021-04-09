@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/text_view_task_title"
-        style="@style/RobotoCondensedBold.16spWhite"
+        style="@style/RobotoCondensedBold.18spWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_8"
@@ -29,14 +29,14 @@
         android:cursorVisible="true"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textSize="@dimen/font_size_12"
+        android:textSize="@dimen/font_size_14"
         app:layout_constraintBottom_toTopOf="@id/text_view_task_description"
         app:layout_constraintStart_toStartOf="@+id/text_view_task_title"
         app:layout_constraintTop_toBottomOf="@id/text_view_task_title" />
 
     <TextView
         android:id="@+id/text_view_task_description"
-        style="@style/RobotoCondensedBold.16spWhite"
+        style="@style/RobotoCondensedBold.18spWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/size_18"
@@ -55,7 +55,7 @@
         android:cursorVisible="true"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textSize="@dimen/font_size_12"
+        android:textSize="@dimen/font_size_14"
         app:layout_constraintEnd_toEndOf="@id/text_view_task_description"
         app:layout_constraintStart_toStartOf="@id/text_view_task_description"
         app:layout_constraintTop_toBottomOf="@id/text_view_task_description" />
@@ -71,7 +71,9 @@
         app:backgroundTint="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:contentDescription="@string/button_save"
+        android:focusable="true"
+        app:srcCompat="@android:drawable/ic_menu_save" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
