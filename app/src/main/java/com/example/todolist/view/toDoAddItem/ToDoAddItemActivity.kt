@@ -21,17 +21,23 @@ class ToDoAddItemActivity : AppCompatActivity() {
 
     private fun saveButton() {
         binding.addButtonToDoItem.setOnClickListener {
-            val title = binding.editTextTaskTitle.text.toString()
-            val description = binding.editTextTaskDescription.text.toString()
-            val toDo = false
-            viewModel.insertNewToDoItem(
-                toDoTitle = title,
-                toDoDescription = description,
-                isConcluded = toDo
-            )
-            title.isBlank()
-            description.isBlank()
+            createNewTask()
         }
+    }
+
+    private fun createNewTask() {
+        val title = binding.editTextTaskTitle.text.toString()
+        val description = binding.editTextTaskDescription.text.toString()
+        val toDo = false
+        viewModel.insertNewToDoItem(
+            toDoTitle = title,
+            toDoDescription = description,
+            isConcluded = toDo
+        )
+    }
+
+    private fun startToDoListActivity() {
+
     }
 }
 
