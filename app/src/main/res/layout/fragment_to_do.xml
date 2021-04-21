@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_todo_item"
-        android:layout_width="@dimen/match_constraint"
-        android:layout_height="@dimen/match_constraint"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/Todo_tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="super tasks"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_18"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/todo_item_layout" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler_view_todo_item"-->
+    <!--        android:layout_width="@dimen/match_constraint"-->
+    <!--        android:layout_height="@dimen/match_constraint"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:listitem="@layout/todo_item_layout" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

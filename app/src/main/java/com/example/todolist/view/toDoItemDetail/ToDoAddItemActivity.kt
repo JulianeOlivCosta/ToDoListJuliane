@@ -1,15 +1,15 @@
-package com.example.todolist.view.toDoAddItem
+package com.example.todolist.view.toDoItemDetail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.todolist.databinding.TodoAddItemActivityBinding
+import com.example.todolist.databinding.TodoItemDetailActivityBinding
 import com.example.todolist.view.toDoList.ToDoViewModel
 import org.koin.android.ext.android.inject
 
 class ToDoAddItemActivity : AppCompatActivity() {
 
     private val binding by lazy {
-        TodoAddItemActivityBinding.inflate(layoutInflater)
+        TodoItemDetailActivityBinding.inflate(layoutInflater)
     }
     private val viewModel by inject<ToDoViewModel>()
 
@@ -36,8 +36,8 @@ class ToDoAddItemActivity : AppCompatActivity() {
         )
     }
 
-    private fun startToDoListActivity() {
-
-    }
+//    private fun startToDoListActivity() {
+//
+//    }
 }
 

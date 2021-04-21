@@ -15,7 +15,7 @@
             android:name="com.google.android.actions"
             android:resource="@xml/my_backup_rules" />
 
-        <activity android:name=".view.toDoAddItem.ToDoAddItemActivity">
+        <activity android:name=".view.toDoList.ToDoListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
