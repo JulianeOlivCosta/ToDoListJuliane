@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.todolist.databinding.TodoListActivityBinding
+import com.example.todolist.view.toDoItemDetail.ToDoAddItemActivity
 import com.google.android.material.tabs.TabLayout
 
 class ToDoListActivity : AppCompatActivity() {
@@ -21,6 +22,13 @@ class ToDoListActivity : AppCompatActivity() {
             fragmentManager = supportFragmentManager,
             titleList = listOf("To Do", "Done")
         )
+        binding.addButtonToDoItem.setOnClickListener {
+            val intent = ToDoAddItemActivity.getIntent(
+                activity = this
+            )
+            startActivity(intent)
+        }
+
     }
 
     private fun setupTabLayout(tabLayout: TabLayout, viewPager: ViewPager) =

@@ -10,4 +10,5 @@
 
     <color name="grey">#666666</color>
     <color name="dark_blue">#FF011739</color>
+    <color name="smoothDark_blue">#00317C</color>
 </resources>

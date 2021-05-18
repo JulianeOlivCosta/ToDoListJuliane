@@ -1,6 +1,4 @@
 
-S
-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 @
@@ -10,13 +8,9 @@ P
 g
 7app/src/main/res/drawable/item_todo_item_background.xml,c/c/ccc8ec56951241dc67ac8e3d0544a8652d43ec7c
 R
-"app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
-R
 "app/src/main/res/values/themes.xml,e/b/eb7f0f821bde169dd21862705b2b042d2cea69a3
 t
 Dapp/src/main/java/com/example/todolist/view/toDoList/DoneFragment.kt,0/c/0c08cd818e35dcbe195bdc4c8dea7f99b26d9792
-l
-<app/src/main/java/com/example/todolist/view/toDoList/ToDo.kt,5/c/5c551cad4c91d219b72e8a7c73af500fc28df744
 x
 Happ/src/main/java/com/example/todolist/view/toDoList/ToDoListActivity.kt,3/6/361df4adb2e146d1c3562ccde8c342a0ec905859
 j
@@ -39,8 +33,6 @@ t
 Dapp/src/main/java/com/example/todolist/domain/useCase/ToDoUseCase.kt,c/f/cf88daf64079a3f34f8a330c1f6f23f51f56d09e
 x
 Happ/src/main/java/com/example/todolist/domain/useCase/ToDoUseCaseImpl.kt,1/9/194f30fd9bbebffc1ea40305d08ed8e434eb4837
-~
-Napp/src/main/java/com/example/todolist/view/toDoAddItem/ToDoAddItemActivity.kt,f/b/fbfba52ad8612418df0f5c458551b0d8d944fb0c
 p
 @app/src/main/java/com/example/todolist/data/di/DataBaseModule.kt,d/e/de91a2205dd39f88bdaa9e6cae3df9da2bf4051c
 l
@@ -59,3 +51,9 @@ n
 >app/src/main/java/com/example/todolist/SampleAppApplication.kt,3/3/33591f474ae4d5f3015a64bc0b793f56f5369777
 i
 9app/src/main/java/com/example/todolist/ToDoListFeature.kt,0/f/0fa2341eeea40167cc31b4703c8408b7a8e25f65
+Å
+Qapp/src/main/java/com/example/todolist/view/toDoItemDetail/ToDoAddItemActivity.kt,d/3/d33dd1c70f4a37f58c74be4622c3905040970e34
+x
+Happ/src/main/java/com/example/todolist/view/toDoList/BasePagerAdapter.kt,7/e/7e34145ab241e69dc256adc1dcaab0db0f51ee33
+t
+Dapp/src/main/java/com/example/todolist/view/toDoList/ToDoFragment.kt,4/c/4c8f96d7e1895a5b6c52815756e501583a5c51c6

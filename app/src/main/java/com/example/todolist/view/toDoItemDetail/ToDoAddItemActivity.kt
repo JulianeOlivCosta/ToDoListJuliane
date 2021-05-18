@@ -1,5 +1,7 @@
 package com.example.todolist.view.toDoItemDetail
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.todolist.databinding.TodoItemDetailActivityBinding
@@ -39,5 +41,11 @@ class ToDoAddItemActivity : AppCompatActivity() {
 //    private fun startToDoListActivity() {
 //
 //    }
+
+    companion object {
+        fun getIntent(
+            activity: Activity
+        ) = Intent(activity, ToDoAddItemActivity::class.java)
+    }
 }
 

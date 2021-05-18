@@ -46,17 +46,20 @@
 
     <EditText
         android:id="@+id/edit_text_task_description"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_8"
         android:layout_marginTop="@dimen/size_4"
         android:layout_marginEnd="@dimen/size_8"
         android:backgroundTint="@color/grey"
         android:cursorVisible="true"
+        android:lines="2"
+        android:textAlignment="textStart"
         android:inputType="text"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/font_size_14"
-        app:layout_constraintEnd_toEndOf="@id/text_view_task_description"
+        tools:text="juliane Oliveira da costajuliane Oliveira da costajuliane Oliveira da costajuliane Oliveira da costa"
         app:layout_constraintStart_toStartOf="@id/text_view_task_description"
         app:layout_constraintTop_toBottomOf="@id/text_view_task_description" />
 
