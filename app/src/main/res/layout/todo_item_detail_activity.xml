@@ -7,61 +7,45 @@
     android:background="@color/dark_blue"
     tools:context=".view.toDoList.ToDoListActivity">
 
-    <TextView
-        android:id="@+id/text_view_task_title"
-        style="@style/RobotoCondensedBold.18spWhite"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_text_task_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_8"
-        android:layout_marginTop="@dimen/size_8"
-        android:text="@string/task_title"
+        android:layout_marginTop="@dimen/size_18"
+        android:layout_marginEnd="@dimen/size_8"
+        android:backgroundTint="@color/grey"
+        android:cursorVisible="true"
+        android:autofillHints="@string/task_title"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="@string/task_title"
+        android:textSize="@dimen/font_size_14"
+        android:textColorHint="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_text_task_title"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="@dimen/size_8"
-        android:layout_marginTop="@dimen/size_4"
-        android:layout_marginEnd="@dimen/size_8"
-        android:backgroundTint="@color/grey"
-        android:cursorVisible="true"
-        android:inputType="text"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_size_14"
-        app:layout_constraintBottom_toTopOf="@id/text_view_task_description"
-        app:layout_constraintStart_toStartOf="@+id/text_view_task_title"
-        app:layout_constraintTop_toBottomOf="@id/text_view_task_title" />
-
-    <TextView
-        android:id="@+id/text_view_task_description"
-        style="@style/RobotoCondensedBold.18spWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_18"
-        android:text="@string/task_description"
-        app:layout_constraintStart_toStartOf="@+id/text_view_task_title"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_task_title" />
-
-    <EditText
         android:id="@+id/edit_text_task_description"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/size_8"
-        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginTop="@dimen/size_18"
         android:layout_marginEnd="@dimen/size_8"
         android:backgroundTint="@color/grey"
         android:cursorVisible="true"
-        android:lines="2"
-        android:textAlignment="textStart"
-        android:inputType="text"
+        android:autofillHints="@string/task_description"
+        android:gravity="top"
+        android:hint="@string/task_description"
+        android:inputType="textMultiLine"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="false"
         android:textSize="@dimen/font_size_14"
-        tools:text="juliane Oliveira da costajuliane Oliveira da costajuliane Oliveira da costajuliane Oliveira da costa"
-        app:layout_constraintStart_toStartOf="@id/text_view_task_description"
-        app:layout_constraintTop_toBottomOf="@id/text_view_task_description" />
+        android:textColorHint="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_task_title" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button_to_do_item"
@@ -71,11 +55,11 @@
         android:layout_marginBottom="@dimen/size_16"
         android:backgroundTint="@color/grey"
         android:clickable="true"
+        android:contentDescription="@string/button_save"
+        android:focusable="true"
         app:backgroundTint="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/button_save"
-        android:focusable="true"
         app:srcCompat="@android:drawable/ic_menu_save" />
 
 

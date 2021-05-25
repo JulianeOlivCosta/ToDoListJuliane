@@ -57,3 +57,5 @@ x
 Happ/src/main/java/com/example/todolist/view/toDoList/BasePagerAdapter.kt,7/e/7e34145ab241e69dc256adc1dcaab0db0f51ee33
 t
 Dapp/src/main/java/com/example/todolist/view/toDoList/ToDoFragment.kt,4/c/4c8f96d7e1895a5b6c52815756e501583a5c51c6
+S
+#app/src/main/res/values/strings.xml,d/2/d2281fbb3027de2722081a53408dd77628bf080e
