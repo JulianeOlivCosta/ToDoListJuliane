@@ -2,12 +2,12 @@ package com.example.todolist.view.toDoList
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.todolist.domain.entities.ToDoEntity
-import com.example.todolist.domain.useCase.ToDoUseCase
+import com.example.todolist.domain.entities.TaskEntity
+import com.example.todolist.domain.useCase.TaskUseCase
 import kotlinx.coroutines.launch
 
 class ToDoViewModel(
-    private val toDoUseCase: ToDoUseCase
+    private val taskUseCase: TaskUseCase
 ) : ViewModel() {
 
     fun insertNewToDoItem(
@@ -16,18 +16,18 @@ class ToDoViewModel(
         isConcluded: Boolean
     ) {
         viewModelScope.launch {
-            val toDoItem = ToDoEntity(
+            val toDoItem = TaskEntity(
                 title = toDoTitle,
                 description = toDoDescription,
                 isConcluded = isConcluded
             )
-            toDoUseCase.insertNewToDoItem(toDoItem)
+            taskUseCase.insertNewToDoItem(toDoItem)
         }
     }
 
     fun getAllToDoItems() {
         viewModelScope.launch {
-            toDoUseCase.getAllToDoItems()
+            taskUseCase.getAllToDoItems()
         }
     }
 
@@ -37,18 +37,18 @@ class ToDoViewModel(
         isConcluded: Boolean
     ) {
         viewModelScope.launch {
-            val deleteToDoItem = ToDoEntity(
+            val deleteToDoItem = TaskEntity(
                 title = toDoTitle,
                 description = toDoDescription,
                 isConcluded = isConcluded
             )
-            toDoUseCase.deleteToDoItem(deleteToDoItem)
+            taskUseCase.deleteToDoItem(deleteToDoItem)
         }
     }
 
     fun deleteAllToDoItems() {
         viewModelScope.launch {
-            toDoUseCase.deleteAllToDoItems()
+            taskUseCase.deleteAllToDoItems()
         }
     }
 }

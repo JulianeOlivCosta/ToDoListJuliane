@@ -16,6 +16,6 @@ class SampleAppApplication : Application() {
             androidContext(this@SampleAppApplication)
         }
 
-        ToDoListFeature.initKoinModules()
+        TaskListFeature.initKoinModules()
     }
 }

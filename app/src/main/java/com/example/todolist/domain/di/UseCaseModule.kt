@@ -1,12 +1,12 @@
 package com.example.todolist.domain.di
 
-import com.example.todolist.domain.useCase.ToDoListUseCaseImpl
-import com.example.todolist.domain.useCase.ToDoUseCase
+import com.example.todolist.domain.useCase.TaskListUseCaseImpl
+import com.example.todolist.domain.useCase.TaskUseCase
 import org.koin.dsl.module
 
 val useCaseModule = module {
-    factory<ToDoUseCase> {
-        ToDoListUseCaseImpl(
+    factory<TaskUseCase> {
+        TaskListUseCaseImpl(
             repository = get()
         )
     }

@@ -15,14 +15,14 @@
             android:name="com.google.android.actions"
             android:resource="@xml/my_backup_rules" />
 
-        <activity android:name=".view.toDoList.ToDoListActivity">
+        <activity android:name=".view.toDoList.TasksActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.toDoItemDetail.ToDoAddItemActivity"></activity>
+        <activity android:name=".view.taskItemDetail.TaskAddItemActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

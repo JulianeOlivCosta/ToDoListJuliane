@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "toDo_data_table")
-data class ToDoEntity(
+data class TaskEntity(
     @ColumnInfo(name = "toDo_title")
     val title: String,
 

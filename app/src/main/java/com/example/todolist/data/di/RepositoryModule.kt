@@ -1,13 +1,13 @@
 package com.example.todolist.data.di
 
-import com.example.todolist.repository.ToDoRepositoryImpl
-import com.example.todolist.repository.TodoRepository
+import com.example.todolist.repository.TaskRepository
+import com.example.todolist.repository.TaskRepositoryImpl
 import org.koin.dsl.module
 
 val repositoryModule = module {
-    factory<TodoRepository> {
-        ToDoRepositoryImpl(
-            toDoDao = get()
+    factory<TaskRepository> {
+        TaskRepositoryImpl(
+            taskDao = get()
         )
     }
 }

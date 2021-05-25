@@ -3,14 +3,14 @@ package com.example.todolist.view.toDoList
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
-import com.example.todolist.databinding.TodoListActivityBinding
-import com.example.todolist.view.toDoItemDetail.ToDoAddItemActivity
+import com.example.todolist.databinding.TasksActivityBinding
+import com.example.todolist.view.taskItemDetail.TaskAddItemActivity
 import com.google.android.material.tabs.TabLayout
 
-class ToDoListActivity : AppCompatActivity() {
+class TasksActivity : AppCompatActivity() {
 
     private val binding by lazy {
-        TodoListActivityBinding.inflate(layoutInflater)
+        TasksActivityBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ class ToDoListActivity : AppCompatActivity() {
             titleList = listOf("To Do", "Done")
         )
         binding.addButtonToDoItem.setOnClickListener {
-            val intent = ToDoAddItemActivity.getIntent(
+            val intent = TaskAddItemActivity.getIntent(
                 activity = this
             )
             startActivity(intent)

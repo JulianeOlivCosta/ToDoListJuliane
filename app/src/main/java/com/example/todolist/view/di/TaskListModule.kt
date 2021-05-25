@@ -7,7 +7,7 @@ import org.koin.dsl.module
 val toDoListModule = module {
     viewModel {
         ToDoViewModel(
-            toDoUseCase = get()
+            taskUseCase = get()
         )
     }
 }

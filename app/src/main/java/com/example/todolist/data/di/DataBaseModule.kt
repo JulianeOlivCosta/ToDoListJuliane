@@ -1,9 +1,9 @@
 package com.example.todolist.data.di
 
-import com.example.todolist.data.ToDoDataBase
+import com.example.todolist.data.TaskDataBase
 import org.koin.dsl.module
 
 val databaseModule = module {
-    single { ToDoDataBase.getInstance(get()) }
-    single { get<ToDoDataBase>().toDoDao() }
+    single { TaskDataBase.getInstance(get()) }
+    single { get<TaskDataBase>().toDoDao() }
 }
