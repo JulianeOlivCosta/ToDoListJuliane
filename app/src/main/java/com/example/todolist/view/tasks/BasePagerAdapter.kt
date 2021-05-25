@@ -1,4 +1,4 @@
-package com.example.todolist.view.toDoList
+package com.example.todolist.view.tasks
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

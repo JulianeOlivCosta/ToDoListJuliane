@@ -14,7 +14,7 @@ data class TaskEntity(
     val description: String,
 
     @ColumnInfo(name = "toDo_status")
-    val isConcluded: Boolean,
+    val isConcluded: Boolean = false,
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "toDo_id")

@@ -1,4 +1,4 @@
-package com.example.todolist.view.toDoList
+package com.example.todolist.view.tasks
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,28 +10,26 @@ class ToDoViewModel(
     private val taskUseCase: TaskUseCase
 ) : ViewModel() {
 
-    fun insertNewToDoItem(
+    fun insertNewTask(
         toDoTitle: String,
-        toDoDescription: String,
-        isConcluded: Boolean
+        toDoDescription: String
     ) {
         viewModelScope.launch {
             val toDoItem = TaskEntity(
                 title = toDoTitle,
-                description = toDoDescription,
-                isConcluded = isConcluded
+                description = toDoDescription
             )
             taskUseCase.insertNewToDoItem(toDoItem)
         }
     }
 
-    fun getAllToDoItems() {
+    fun getAllTasks() {
         viewModelScope.launch {
             taskUseCase.getAllToDoItems()
         }
     }
 
-    fun deleteToDoItem(
+    fun deleteTask(
         toDoTitle: String,
         toDoDescription: String,
         isConcluded: Boolean
@@ -46,7 +44,7 @@ class ToDoViewModel(
         }
     }
 
-    fun deleteAllToDoItems() {
+    fun deleteAllTasks() {
         viewModelScope.launch {
             taskUseCase.deleteAllToDoItems()
         }

@@ -1,5 +1,7 @@
-package com.example.todolist.view.toDoList
+package com.example.todolist.view.tasks
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
@@ -34,5 +36,9 @@ class TasksActivity : AppCompatActivity() {
     private fun setupTabLayout(tabLayout: TabLayout, viewPager: ViewPager) =
         tabLayout.setupWithViewPager(viewPager)
 
-
+    companion object {
+        fun getIntent(
+            activity: Activity
+        ) = Intent(activity, TasksActivity::class.java)
+    }
 }
