@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue">
+
+    <Toolbar
+        android:id="@+id/toolbar_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        app:layout_constraintBottom_toTopOf="@+id/tab_layout_todo_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout_todo_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/dark_blue"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_task"
         app:tabIndicatorColor="@color/smoothDark_blue"
-        app:tabTextColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent">
+        app:tabTextColor="@color/white">
 
     </com.google.android.material.tabs.TabLayout>
 
@@ -29,16 +39,18 @@
         android:id="@+id/add_button_to_do_item"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_18"
+        android:layout_marginBottom="@dimen/size_16"
         android:background="@color/smoothDark_blue"
         android:backgroundTint="@color/smoothDark_blue"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:contentDescription="@string/add_new_task"
+        android:focusable="true"
         app:backgroundTint="@color/smoothDark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_pager"
-        android:focusable="true"
-        app:srcCompat="@android:drawable/ic_input_add">
+        app:srcCompat="@drawable/ic_add_task_white">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
