@@ -9,6 +9,7 @@
     <dimen name="size_14">14dp</dimen>
     <dimen name="size_16">16dp</dimen>
     <dimen name="size_18">18dp</dimen>
+    <dimen name="size_25">25dp</dimen>
 
     <dimen name="font_size_12">12sp</dimen>
     <dimen name="font_size_14">14sp</dimen>

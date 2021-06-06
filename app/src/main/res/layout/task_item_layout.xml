@@ -13,47 +13,31 @@
     android:layout_marginBottom="@dimen/size_10"
     android:theme="@style/ToDoListItemBackground">
 
-    <Button
-        android:id="@+id/button_todo_item_status"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="@dimen/size_16"
-        android:layout_marginTop="@dimen/size_8"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="@dimen/size_25"
+        android:layout_height="@dimen/size_25"
+        android:layout_marginStart="@dimen/size_8"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_todo_item_description"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_todo_item_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:focusable="true"
-        tools:visibility="invisible" />
+        app:layout_constraintTop_toTopOf="@id/text_view_todo_item_title"
 
-    <ImageView
-        android:id="@+id/image_view_delivery_card_status_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="@dimen/size_16"
-        android:layout_marginTop="@dimen/size_8"
-        android:layout_marginEnd="@dimen/size_14"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="@+id/text_view_todo_item_title"
-        app:layout_constraintEnd_toStartOf="@id/text_view_todo_item_title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/ic_checked"
-        tools:visibility="visible" />
+        />
 
     <TextView
         android:id="@+id/text_view_todo_item_title"
         style="@style/RobotoCondensedBold.18spWhite"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/size_18"
-        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginEnd="@dimen/size_8"
         android:maxLines="2"
-        app:layout_constraintBottom_toBottomOf="@id/button_todo_item_status"
+        app:layout_constraintBottom_toTopOf="@id/text_view_todo_item_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_todo_item_status"
-        app:layout_constraintTop_toTopOf="@id/button_todo_item_status"
+        app:layout_constraintStart_toEndOf="@id/checkBox"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="To Do item title" />
 
     <TextView
@@ -61,13 +45,12 @@
         style="@style/RobotoCondensedRegular.12spWhite"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_16"
-        android:layout_marginBottom="@dimen/size_8"
-        android:maxLines="2"
+        android:layout_marginVertical="@dimen/size_8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/text_view_todo_item_title"
         app:layout_constraintStart_toStartOf="@id/text_view_todo_item_title"
         app:layout_constraintTop_toBottomOf="@id/text_view_todo_item_title"
         tools:text="Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description Task Description" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
