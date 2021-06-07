@@ -27,8 +27,6 @@ t
 Dapp/src/main/java/com/example/todolist/view/di/PresentationModule.kt,7/5/755ed57c8f55a06343ed90aa5cc86af2c418809c
 n
 >app/src/main/java/com/example/todolist/SampleAppApplication.kt,3/3/33591f474ae4d5f3015a64bc0b793f56f5369777
-S
-#app/src/main/res/values/strings.xml,d/2/d2281fbb3027de2722081a53408dd77628bf080e
 R
 "app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 j
@@ -65,3 +63,7 @@ r
 Bapp/src/main/java/com/example/todolist/view/tasks/ToDoViewModel.kt,e/3/e37c2a63c390c95abc45b38262a261cd9cb121e0
 q
 Aapp/src/main/java/com/example/todolist/view/tasks/DoneFragment.kt,f/2/f269d68eae0a76097e24d5ff5517282e80fa0820
+R
+"app/src/main/res/values/dimens.xml,c/3/c3c1811dec2dbad2deeafb9aad505ca9631da740
+{
+Kapp/src/main/java/com/example/todolist/view/tasks/adapter/TaskViewHolder.kt,f/f/ffe2c9140d89f9b00e5de139c8e2a4e00f580863

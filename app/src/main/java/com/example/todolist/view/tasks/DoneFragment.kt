@@ -5,14 +5,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.todolist.R
+import com.example.todolist.databinding.FragmentToDoBinding
 
 class DoneFragment : Fragment() {
 
+    private val binding by lazy {
+        FragmentToDoBinding.inflate(layoutInflater)
+    }
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_done, container, false)
+    ): View {
+        super.onCreateView(inflater, container, savedInstanceState)
+        return binding.root
+    }
+
+    companion object {
+        fun newInstance() = DoneFragment()
     }
 }

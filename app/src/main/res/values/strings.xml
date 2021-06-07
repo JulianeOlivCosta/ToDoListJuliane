@@ -6,4 +6,6 @@
     <string name="task_description">Task Description</string>
     <string name="button_save">Save</string>
     <string name="add_new_task">Add new task</string>
+    <string name="task_toDo_tab_title">To Do</string>
+    <string name="task_done_tab_title">Done</string>
 </resources>
